@@ -1,0 +1,37 @@
+:root {
+  --cn-roxo: #5c2c7a;    
+  --cn-lilas: #e6d7f0;   
+  --cn-dourado: #c5a059; 
+  --cn-branco: #ffffff;
+}
+
+body {
+  background-color: var(--cn-lilas); 
+}
+
+
+.bg-cn-roxo {
+  background-color: var(--cn-roxo) !important;
+  color: var(--cn-branco) !important;
+}
+
+.text-cn-roxo {
+  color: var(--cn-roxo) !important;
+}
+
+.btn-cn-dourado {
+  background-color: var(--cn-dourado);
+  color: var(--cn-branco);
+  font-weight: bold;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-cn-dourado:hover {
+  background-color: #a88748; 
+  color: var(--cn-branco);
+}
+
+.card-estetica {
+  border-top: 4px solid var(--cn-dourado); 
+}

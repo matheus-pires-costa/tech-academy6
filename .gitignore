@@ -1,0 +1,20 @@
+# Dependências (nunca versionar!)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+
+# Certificados locais (mkcert)
+certs/
+*.pem
+*.key
+*.crt
+
+# Builds e logs
+backend/dist/
+frontend/dist/
+*.log
