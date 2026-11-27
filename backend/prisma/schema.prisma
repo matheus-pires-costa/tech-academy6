@@ -3,10 +3,9 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "mysql"
+  url      = env("DATABASE_URL")
 }
-
 
 model Usuario {
   id    Int    @id @default(autoincrement())
@@ -16,7 +15,6 @@ model Usuario {
   cpf   String @unique
 }
 
-
 model Cliente {
   id           Int           @id @default(autoincrement())
   nome         String
@@ -25,16 +23,14 @@ model Cliente {
   agendamentos Agendamento[]
 }
 
-
 model Procedimento {
-  id        Int      @id @default(autoincrement())
-  nome      String
-  descricao String?
-  preco     Float
-  duracao   Int      
+  id           Int           @id @default(autoincrement())
+  nome         String
+  descricao    String?
+  preco        Float
+  duracao      Int
   agendamentos Agendamento[]
 }
-
 
 model Agendamento {
   id             Int          @id @default(autoincrement())
