@@ -18,3 +18,7 @@ certs/
 backend/dist/
 frontend/dist/
 *.log
+node_modules/
+tests-e2e/node_modules/
+tests-e2e/test-results/
+tests-e2e/playwright-report/

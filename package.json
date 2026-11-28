@@ -1,0 +1,25 @@
+{
+  "name": "tech-academy6",
+  "version": "1.0.0",
+  "description": "tech-academy6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheus-pires-costa/tech-academy6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/matheus-pires-costa/tech-academy6/issues"
+  },
+  "homepage": "https://github.com/matheus-pires-costa/tech-academy6#readme",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}
