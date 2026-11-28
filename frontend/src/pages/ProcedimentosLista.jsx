@@ -15,7 +15,7 @@ function ProcedimentosLista() {
   const carregarProcedimentos = async () => {
     const token = localStorage.getItem('token');
     try {
-      const resposta = await fetch(`https://cn-estetica-api.onrender.com/procedimentos?pagina=${pagina}&limite=${limite}`, {
+      const resposta = await fetch(`/api/procedimentos?pagina=${pagina}&limite=${limite}`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (resposta.ok) {
@@ -33,7 +33,7 @@ function ProcedimentosLista() {
   const handleDeletar = async (id) => {
     if (!window.confirm('Excluir este procedimento?')) return;
     const token = localStorage.getItem('token');
-    await fetch(`https://cn-estetica-api.onrender.com/procedimentos/${id}`, { method: 'DELETE', headers: { 'Authorization': `Bearer ${token}` } });
+    await fetch(`/api/procedimentos/${id}`, { method: 'DELETE', headers: { 'Authorization': `Bearer ${token}` } });
     carregarProcedimentos();
   };
 

@@ -20,7 +20,7 @@ function ClienteForm() {
   const handleSubmeter = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem('token');
-    const url = clienteEmEdicao ? `https://cn-estetica-api.onrender.com/clientes/${clienteEmEdicao.id}` : 'https://cn-estetica-api.onrender.com/clientes';
+    const url = clienteEmEdicao ? `/api/clientes/${clienteEmEdicao.id}` : '/api/clientes';
     const metodo = clienteEmEdicao ? 'PUT' : 'POST';
 
     try {

@@ -23,7 +23,7 @@ function ProcedimentoForm() {
   const handleSubmeter = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem('token');
-    const url = procedimentoEmEdicao ? `https://cn-estetica-api.onrender.com/procedimentos/${procedimentoEmEdicao.id}` : 'https://cn-estetica-api.onrender.com/procedimentos';
+    const url = procedimentoEmEdicao ? `/api/procedimentos/${procedimentoEmEdicao.id}` : '/api/procedimentos';
     const metodo = procedimentoEmEdicao ? 'PUT' : 'POST';
 
     

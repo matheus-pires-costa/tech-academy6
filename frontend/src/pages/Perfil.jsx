@@ -28,7 +28,7 @@ function Perfil() {
       const token = localStorage.getItem('token');
       const id = usuario?.id; 
 
-      const resposta = await fetch(`https://cn-estetica-api.onrender.com/usuarios/${id}`, {
+      const resposta = await fetch(`/api/usuarios/${id}`, {
         method: 'PUT',
         headers: { 
           'Content-Type': 'application/json',
